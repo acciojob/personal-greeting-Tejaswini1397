@@ -10,11 +10,13 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+        <form>
         <label htmlFor="name">Enter your name:</label>
             
             <input id="name" onChange={onChangeText} />
+            </form>
           
-            {inputValue && <p>{`Hello ${inputValue}!`}</p>}
+            <p>{`Hello ${inputValue}!`}</p>
           
     </div>
   )
